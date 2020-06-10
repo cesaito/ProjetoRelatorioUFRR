@@ -18,11 +18,14 @@ import com.itextpdf.text.Rectangle;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import javax.xml.parsers.ParserConfigurationException;
+import org.xml.sax.SAXException;
 
 
 
@@ -35,12 +38,14 @@ public class Teste {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws BadElementException, IOException {
+    public static void main(String[] args) throws BadElementException, IOException, ParserConfigurationException, SAXException {
         
-       // ByteArrayOutputStream bos = new ByteArrayOutputStream();
+         LerXML _tabela1 = new LerXML();
+         ArrayList _listaTabela1 = new ArrayList();
+         ArrayList _listaTabela2 = new ArrayList();
+         ArrayList _listaTabela4 = new ArrayList();
+         
         Document documento = new Document(PageSize.A4, 20, 20, 50, 25);
-        try {
-
             try {
 
                 PdfWriter writer = PdfWriter.getInstance(documento, new FileOutputStream("Bo_Epidemiologico.pdf"));
@@ -53,7 +58,7 @@ public class Teste {
                 Font font2 = new Font(Font.FontFamily.UNDEFINED, 10, Font.BOLD);
                 Font font3 = new Font(Font.FontFamily.UNDEFINED, 11, Font.BOLD);
                 
-                
+               
                 PdfPTable tbHeader = new PdfPTable(3);
                 PdfPCell _cell = new PdfPCell(new Paragraph("Cabeçalho"));
                 _cell.setHorizontalAlignment(Element.ALIGN_CENTER);
@@ -77,59 +82,25 @@ public class Teste {
                         + "residência. Roraima – RR, 2020.\n\n");
                 teste.setAlignment(Element.ALIGN_JUSTIFIED);
                 documento.add(teste);
+                PdfPTable tabela1 = new PdfPTable(5);
+                tabela1.addCell("Municipios");
+                tabela1.addCell("Notificados");
+                tabela1.addCell("Confirmados");
+                tabela1.addCell("Recuperados");
+                tabela1.addCell("Descartados");
                 
-                PdfPTable tabela = new PdfPTable(5);
-                tabela.addCell("Municipios");
-                tabela.addCell("Notificados");
-                tabela.addCell("Confirmados");
-                tabela.addCell("Recuperados");
-                tabela.addCell("Descartados");
-                tabela.addCell("Alto Alegre");
-                tabela.addCell("121");
-                tabela.addCell("78");
-                tabela.addCell("25");
-                tabela.addCell("43");
-                tabela.addCell("Amajarí");
-                tabela.addCell("57");
-                tabela.addCell("38");
-                tabela.addCell("1");
-                tabela.addCell("19");
-                tabela.addCell("Boa Vista");
-                tabela.addCell("4.647");
-                tabela.addCell("3.133");
-                tabela.addCell("1.002");
-                tabela.addCell("1.514");
-                tabela.addCell("Bonfim");
-                tabela.addCell("150");
-                tabela.addCell("84");
-                tabela.addCell("23");
-                tabela.addCell("66");
-                tabela.addCell("Cantá");
-                tabela.addCell("238");
-                tabela.addCell("170");
-                tabela.addCell("7");
-                tabela.addCell("68");
-                tabela.addCell("Caracaraí");
-                tabela.addCell("27");
-                tabela.addCell("23");
-                tabela.addCell("0");
-                tabela.addCell("4");
-                tabela.addCell("Coroebe");
-                tabela.addCell("165");
-                tabela.addCell("67");
-                tabela.addCell("29");
-                tabela.addCell("98");
-                tabela.addCell("Iracema");
-                tabela.addCell("25");
-                tabela.addCell("13");
-                tabela.addCell("0");
-                tabela.addCell("12");
-                tabela.addCell("Mucajaí");
-                tabela.addCell("179");
-                tabela.addCell("112");
-                tabela.addCell("13");
-                tabela.addCell("67");
-                documento.add(tabela);
+                _listaTabela1 = _tabela1.Tabela1();
+                
+                int _tamanholista = _listaTabela1.size();
+                
+                for (int i=0; i < _tamanholista; i++)
+                {
+                    if ( _listaTabela1.get(i).equals("NULL"))
+                      tabela1.addCell("0");
+                    else
+                      tabela1.addCell((String) _listaTabela1.get(i));
+                }                
+                documento.add(tabela1);
                 
                 Paragraph espaco = new Paragraph("\n \n");
                 documento.add(espaco);
@@ -175,7 +146,7 @@ public class Teste {
                     _cellNandPercent.setHorizontalAlignment(PdfPCell.ALIGN_CENTER);// mais essa difere dos 2
                     table2.addCell(_cellNandPercent);
                 }
-                
+                /*
                 ///////////////////texto
                 PdfPCell _cellAux1 = new PdfPCell(new Phrase("Menor que 1 ano", font2));
                 _cellAux1.setBorder(PdfPCell.NO_BORDER);
@@ -205,10 +176,33 @@ public class Teste {
                     _cellNandPercent.setHorizontalAlignment(PdfPCell.ALIGN_CENTER); //
                     table2.addCell(_cellNandPercent);
                 }
-
-
+                
+                
+                */
+                
+                _listaTabela2 = LerXML.Tabela2();
+                int _tamanholista2 = _listaTabela2.size();
+                
+                for (int i=0; i < _tamanholista2; i++)
+                {
+                     table2.addCell((String) _listaTabela2.get(i));
+                }            
                 documento.add(table2);
                 
+                documento.add(espaco);
+                
+                PdfPTable tabela4 = new PdfPTable(3);
+                _listaTabela4 = LerXML.Tabela4();
+                int _tamanholista4 = _listaTabela4.size();
+                
+                for (int i=0; i < _tamanholista4; i++)
+                {
+                    if ( _listaTabela4.get(i).equals("NULL"))
+                      tabela4.addCell("");
+                    else
+                     tabela4.addCell((String) _listaTabela4.get(i));
+                }            
+                documento.add(tabela4);
                 
                 documento.close();
                 writer.close();
@@ -216,10 +210,6 @@ public class Teste {
             } catch (DocumentException ex) {
                 Logger.getLogger(Teste.class.getName()).log(Level.SEVERE, null, ex);
             }
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(Teste.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
     }
 
 }

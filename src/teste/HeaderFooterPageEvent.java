@@ -32,8 +32,8 @@ public class HeaderFooterPageEvent extends PdfPageEventHelper {
     
     private Date date = new Date();
     private final Font fontHeader = new Font(Font.FontFamily.UNDEFINED, 10,  Font.NORMAL, BaseColor.BLUE);
-    private final String pathNumBo = "C:\\Users\\tarli\\OneDrive\\Documents\\1_bo_scripts\\ProjetoRelatorioUFRR-master\\src\\teste\\n_boletim.txt"; 
-    private final String pathImage = "C:\\Users\\tarli\\OneDrive\\Documents\\1_bo_scripts\\ProjetoRelatorioUFRR-master\\Imagens\\Cabecalho.png";
+    private final String pathNumBo = ".\\src\\teste\\n_boletim.txt"; 
+    private final String pathImage = ".\\Imagens\\Cabecalho.png";
     @Override
     public void onStartPage(PdfWriter writer, Document documento) {
         Image cabecalho;
@@ -55,7 +55,7 @@ public class HeaderFooterPageEvent extends PdfPageEventHelper {
     public void onEndPage(PdfWriter writer, Document documento) {
         Image rodape;
         try {
-            rodape = Image.getInstance("C:\\Users\\tarli\\OneDrive\\Documents\\1_bo_scripts\\ProjetoRelatorioUFRR-master\\Imagens\\Rodape.png");
+            rodape = Image.getInstance(".\\Imagens\\Rodape.png");
             rodape.setAlignment(Element.ALIGN_CENTER);
             rodape.scaleAbsolute(560, 35);
             rodape.setAbsolutePosition(25, 10);

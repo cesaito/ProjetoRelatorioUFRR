@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<row>
+  <variavel>Sexo</variavel>
+  <n_>NULL</n_>
+  <__>NULL</__>
+</row>
+<row>
+  <variavel>Masculino</variavel>
+  <n_>94</n_>
+  <__>64.828</__>
+</row>
+<row>
+  <variavel>Feminino</variavel>
+  <n_>51</n_>
+  <__>35.172</__>
+</row>
+<row>
+  <variavel>Faixa etária</variavel>
+  <n_>NULL</n_>
+  <__>NULL</__>
+</row>
+<row>
+  <variavel>10-19 Anos</variavel>
+  <n_>4</n_>
+  <__>2.759</__>
+</row>
+<row>
+  <variavel>1-9 Anos</variavel>
+  <n_>1</n_>
+  <__>0.69</__>
+</row>
+<row>
+  <variavel>20-29 Anos</variavel>
+  <n_>2</n_>
+  <__>1.379</__>
+</row>
+<row>
+  <variavel>30-39 Anos</variavel>
+  <n_>12</n_>
+  <__>8.276</__>
+</row>
+<row>
+  <variavel>40-49 Anos</variavel>
+  <n_>22</n_>
+  <__>15.172</__>
+</row>
+<row>
+  <variavel>50-59 Anos</variavel>
+  <n_>27</n_>
+  <__>18.621</__>
+</row>
+<row>
+  <variavel>60-69 Anos</variavel>
+  <n_>29</n_>
+  <__>20</__>
+</row>
+<row>
+  <variavel>Maior que 70 anos </variavel>
+  <n_>45</n_>
+  <__>31.034</__>
+</row>
+<row>
+  <variavel>Menor que 1 ano</variavel>
+  <n_>3</n_>
+  <__>2.069</__>
+</row>
+</data>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<row>
+  <faixetaria_idade>10-19 Anos</faixetaria_idade>
+  <total_mas>106</total_mas>
+  <porcentagem_mas>3.8</porcentagem_mas>
+  <total_fem>112</total_fem>
+  <porcentagem_fem>3.96</porcentagem_fem>
+  <total_mas_fem>218</total_mas_fem>
+  <porcentagem_mas_fem>3.88</porcentagem_mas_fem>
+</row>
+<row>
+  <faixetaria_idade>1-9 Anos</faixetaria_idade>
+  <total_mas>83</total_mas>
+  <porcentagem_mas>2.98</porcentagem_mas>
+  <total_fem>87</total_fem>
+  <porcentagem_fem>3.07</porcentagem_fem>
+  <total_mas_fem>170</total_mas_fem>
+  <porcentagem_mas_fem>3.03</porcentagem_mas_fem>
+</row>
+<row>
+  <faixetaria_idade>20-29 Anos</faixetaria_idade>
+  <total_mas>531</total_mas>
+  <porcentagem_mas>19.05</porcentagem_mas>
+  <total_fem>487</total_fem>
+  <porcentagem_fem>17.21</porcentagem_fem>
+  <total_mas_fem>1018</total_mas_fem>
+  <porcentagem_mas_fem>18.12</porcentagem_mas_fem>
+</row>
+<row>
+  <faixetaria_idade>30-39 Anos</faixetaria_idade>
+  <total_mas>761</total_mas>
+  <porcentagem_mas>27.31</porcentagem_mas>
+  <total_fem>882</total_fem>
+  <porcentagem_fem>31.17</porcentagem_fem>
+  <total_mas_fem>1643</total_mas_fem>
+  <porcentagem_mas_fem>29.25</porcentagem_mas_fem>
+</row>
+<row>
+  <faixetaria_idade>40-49 Anos</faixetaria_idade>
+  <total_mas>602</total_mas>
+  <porcentagem_mas>21.6</porcentagem_mas>
+  <total_fem>670</total_fem>
+  <porcentagem_fem>23.67</porcentagem_fem>
+  <total_mas_fem>1272</total_mas_fem>
+  <porcentagem_mas_fem>22.65</porcentagem_mas_fem>
+</row>
+<row>
+  <faixetaria_idade>50-59 Anos</faixetaria_idade>
+  <total_mas>348</total_mas>
+  <porcentagem_mas>12.49</porcentagem_mas>
+  <total_fem>315</total_fem>
+  <porcentagem_fem>11.13</porcentagem_fem>
+  <total_mas_fem>663</total_mas_fem>
+  <porcentagem_mas_fem>11.8</porcentagem_mas_fem>
+</row>
+<row>
+  <faixetaria_idade>Maior que 60 anos </faixetaria_idade>
+  <total_mas>307</total_mas>
+  <porcentagem_mas>11.02</porcentagem_mas>
+  <total_fem>226</total_fem>
+  <porcentagem_fem>7.99</porcentagem_fem>
+  <total_mas_fem>533</total_mas_fem>
+  <porcentagem_mas_fem>9.49</porcentagem_mas_fem>
+</row>
+<row>
+  <faixetaria_idade>Menor que 1 ano</faixetaria_idade>
+  <total_mas>49</total_mas>
+  <porcentagem_mas>1.76</porcentagem_mas>
+  <total_fem>51</total_fem>
+  <porcentagem_fem>1.8</porcentagem_fem>
+  <total_mas_fem>100</total_mas_fem>
+  <porcentagem_mas_fem>1.78</porcentagem_mas_fem>
+</row>
+<row>
+  <faixetaria_idade>Total</faixetaria_idade>
+  <total_mas>2787</total_mas>
+  <porcentagem_mas>100</porcentagem_mas>
+  <total_fem>2830</total_fem>
+  <porcentagem_fem>100</porcentagem_fem>
+  <total_mas_fem>5617</total_mas_fem>
+  <porcentagem_mas_fem>100</porcentagem_mas_fem>
+</row>
+</data>
