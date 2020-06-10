@@ -11,32 +11,24 @@ import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Element;
 import com.itextpdf.text.Font;
-//import com.itextpdf.text.Image;
 import com.itextpdf.text.PageSize;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.Phrase;
 import com.itextpdf.text.Rectangle;
-//import com.itextpdf.text.pdf.ColumnText;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
-//import com.itextpdf.text.pdf.PdfPageEventHelper;
 import com.itextpdf.text.pdf.PdfWriter;
-//import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-//import javafx.scene.layout.Border;
-//import org.jfree.chart.ChartFactory;
-//import org.jfree.chart.ChartUtilities;
-//import org.jfree.chart.JFreeChart;
-//import org.jfree.chart.plot.PlotOrientation;
-//import org.jfree.data.category.DefaultCategoryDataset;
+
+
 
 /**
  *
- * @author Convidado
+ * @author Convidado, tarlison
  */
 public class Teste {
 
@@ -50,14 +42,17 @@ public class Teste {
         try {
 
             try {
-                
+
                 PdfWriter writer = PdfWriter.getInstance(documento, new FileOutputStream("Bo_Epidemiologico.pdf"));
                 HeaderFooterPageEvent event = new HeaderFooterPageEvent();
                 writer.setPageEvent(event);
-                documento.open();
+                documento.open(); 
+                event.escreveNumBoletim(writer);
+                event.escreveData(writer);
                 Font font1 = new Font(Font.FontFamily.UNDEFINED, 12, Font.BOLD);
                 Font font2 = new Font(Font.FontFamily.UNDEFINED, 10, Font.BOLD);
                 Font font3 = new Font(Font.FontFamily.UNDEFINED, 11, Font.BOLD);
+                
                 
                 PdfPTable tbHeader = new PdfPTable(3);
                 PdfPCell _cell = new PdfPCell(new Paragraph("Cabeçalho"));
@@ -211,8 +206,6 @@ public class Teste {
                     table2.addCell(_cellNandPercent);
                 }
 
-
-                
 
                 documento.add(table2);
                 
