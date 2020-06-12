@@ -85,7 +85,6 @@ public class HeaderFooterPageEvent extends PdfPageEventHelper {
         int numBo = Integer.parseInt(numBoletim); //num do boletim
         numBo += 1; //att num do boletim
         numBoletim = String.valueOf(numBo);
-        System.out.println("aqui "+numBoletim);
         NumeroBoletim.gravarArquivo(numBoletim,pathNumBo);
     }
 }

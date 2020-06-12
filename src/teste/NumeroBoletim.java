@@ -23,7 +23,6 @@ public class NumeroBoletim{
     public static void gravarArquivo(String novoNum, String nomeArq) throws IOException {
       FileWriter arq = new FileWriter(nomeArq);
       PrintWriter gravarArq = new PrintWriter(arq);
-      System.out.println("aqui gravar "+novoNum);
       gravarArq.printf(novoNum);
       arq.close();
     }
@@ -33,7 +32,6 @@ public class NumeroBoletim{
       FileReader arq = new FileReader(nomeArq);
       BufferedReader lerArq = new BufferedReader(arq);
       String linha = lerArq.readLine();
-      System.out.println(linha);
       return linha;
     }
     
