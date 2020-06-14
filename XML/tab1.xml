@@ -1,115 +1,130 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<data>
-<row>
-  <MUNIC_PIOS>Alto Alegre</MUNIC_PIOS>
-  <NOTIFICADOS>218</NOTIFICADOS>
-  <CONFIRMADOS>76</CONFIRMADOS>
-  <RECUPERADOS>11</RECUPERADOS>
-  <DESCARTADOS>5</DESCARTADOS>
-</row>
-<row>
-  <MUNIC_PIOS>Amajari</MUNIC_PIOS>
-  <NOTIFICADOS>123</NOTIFICADOS>
-  <CONFIRMADOS>41</CONFIRMADOS>
-  <RECUPERADOS>8</RECUPERADOS>
-  <DESCARTADOS>NULL</DESCARTADOS>
-</row>
-<row>
-  <MUNIC_PIOS>Boa Vista</MUNIC_PIOS>
-  <NOTIFICADOS>20767</NOTIFICADOS>
-  <CONFIRMADOS>4482</CONFIRMADOS>
-  <RECUPERADOS>1206</RECUPERADOS>
-  <DESCARTADOS>662</DESCARTADOS>
-</row>
-<row>
-  <MUNIC_PIOS>Bonfim</MUNIC_PIOS>
-  <NOTIFICADOS>296</NOTIFICADOS>
-  <CONFIRMADOS>93</CONFIRMADOS>
-  <RECUPERADOS>15</RECUPERADOS>
-  <DESCARTADOS>11</DESCARTADOS>
-</row>
-<row>
-  <MUNIC_PIOS>Cantá</MUNIC_PIOS>
-  <NOTIFICADOS>413</NOTIFICADOS>
-  <CONFIRMADOS>208</CONFIRMADOS>
-  <RECUPERADOS>14</RECUPERADOS>
-  <DESCARTADOS>13</DESCARTADOS>
-</row>
-<row>
-  <MUNIC_PIOS>Caracaraí</MUNIC_PIOS>
-  <NOTIFICADOS>379</NOTIFICADOS>
-  <CONFIRMADOS>27</CONFIRMADOS>
-  <RECUPERADOS>4</RECUPERADOS>
-  <DESCARTADOS>13</DESCARTADOS>
-</row>
-<row>
-  <MUNIC_PIOS>Caroebe</MUNIC_PIOS>
-  <NOTIFICADOS>390</NOTIFICADOS>
-  <CONFIRMADOS>92</CONFIRMADOS>
-  <RECUPERADOS>14</RECUPERADOS>
-  <DESCARTADOS>14</DESCARTADOS>
-</row>
-<row>
-  <MUNIC_PIOS>Iracema</MUNIC_PIOS>
-  <NOTIFICADOS>80</NOTIFICADOS>
-  <CONFIRMADOS>20</CONFIRMADOS>
-  <RECUPERADOS>1</RECUPERADOS>
-  <DESCARTADOS>3</DESCARTADOS>
-</row>
-<row>
-  <MUNIC_PIOS>Mucajaí</MUNIC_PIOS>
-  <NOTIFICADOS>325</NOTIFICADOS>
-  <CONFIRMADOS>68</CONFIRMADOS>
-  <RECUPERADOS>11</RECUPERADOS>
-  <DESCARTADOS>14</DESCARTADOS>
-</row>
-<row>
-  <MUNIC_PIOS>Normandia</MUNIC_PIOS>
-  <NOTIFICADOS>47</NOTIFICADOS>
-  <CONFIRMADOS>25</CONFIRMADOS>
-  <RECUPERADOS>1</RECUPERADOS>
-  <DESCARTADOS>1</DESCARTADOS>
-</row>
-<row>
-  <MUNIC_PIOS>Pacaraima</MUNIC_PIOS>
-  <NOTIFICADOS>736</NOTIFICADOS>
-  <CONFIRMADOS>129</CONFIRMADOS>
-  <RECUPERADOS>69</RECUPERADOS>
-  <DESCARTADOS>26</DESCARTADOS>
-</row>
-<row>
-  <MUNIC_PIOS>Rorainópolis</MUNIC_PIOS>
-  <NOTIFICADOS>1928</NOTIFICADOS>
-  <CONFIRMADOS>225</CONFIRMADOS>
-  <RECUPERADOS>61</RECUPERADOS>
-  <DESCARTADOS>61</DESCARTADOS>
-</row>
-<row>
-  <MUNIC_PIOS>São João da Baliza</MUNIC_PIOS>
-  <NOTIFICADOS>206</NOTIFICADOS>
-  <CONFIRMADOS>55</CONFIRMADOS>
-  <RECUPERADOS>5</RECUPERADOS>
-  <DESCARTADOS>9</DESCARTADOS>
-</row>
-<row>
-  <MUNIC_PIOS>São Luiz</MUNIC_PIOS>
-  <NOTIFICADOS>167</NOTIFICADOS>
-  <CONFIRMADOS>52</CONFIRMADOS>
-  <RECUPERADOS>20</RECUPERADOS>
-  <DESCARTADOS>17</DESCARTADOS>
-</row>
-<row>
-  <MUNIC_PIOS>Uiramutã</MUNIC_PIOS>
-  <NOTIFICADOS>42</NOTIFICADOS>
-  <CONFIRMADOS>24</CONFIRMADOS>
-  <RECUPERADOS>NULL</RECUPERADOS>
-  <DESCARTADOS>NULL</DESCARTADOS>
-</row>
-<row>
-  <MUNIC_PIOS>Total</MUNIC_PIOS>
-  <NOTIFICADOS>26117</NOTIFICADOS>
-  <CONFIRMADOS>5617</CONFIRMADOS>
-  <RECUPERADOS>1440</RECUPERADOS>
-  <DESCARTADOS>849</DESCARTADOS>
-</row>
-</data>
+﻿<collection>
+<totalCasoNotificadoDTO>
+<confirmados>76</confirmados>
+<descartados>5</descartados>
+<id>1</id>
+<municipios>Alto Alegre</municipios>
+<notificados>237</notificados>
+<recuperados>17</recuperados>
+</totalCasoNotificadoDTO>
+<totalCasoNotificadoDTO>
+<confirmados>41</confirmados>
+<descartados>15</descartados>
+<id>2</id>
+<municipios>Amajari</municipios>
+<notificados>130</notificados>
+<recuperados>13</recuperados>
+</totalCasoNotificadoDTO>
+<totalCasoNotificadoDTO>
+<confirmados>4588</confirmados>
+<descartados>692</descartados>
+<id>3</id>
+<municipios>Boa Vista</municipios>
+<notificados>22086</notificados>
+<recuperados>1420</recuperados>
+</totalCasoNotificadoDTO>
+<totalCasoNotificadoDTO>
+<confirmados>93</confirmados>
+<descartados>11</descartados>
+<id>4</id>
+<municipios>Bonfim</municipios>
+<notificados>305</notificados>
+<recuperados>33</recuperados>
+</totalCasoNotificadoDTO>
+<totalCasoNotificadoDTO>
+<confirmados>209</confirmados>
+<descartados>13</descartados>
+<id>5</id>
+<municipios>Cantá</municipios>
+<notificados>435</notificados>
+<recuperados>21</recuperados>
+</totalCasoNotificadoDTO>
+<totalCasoNotificadoDTO>
+<confirmados>27</confirmados>
+<descartados>13</descartados>
+<id>6</id>
+<municipios>Caracaraí</municipios>
+<notificados>394</notificados>
+<recuperados>11</recuperados>
+</totalCasoNotificadoDTO>
+<totalCasoNotificadoDTO>
+<confirmados>92</confirmados>
+<descartados>14</descartados>
+<id>7</id>
+<municipios>Caroebe</municipios>
+<notificados>402</notificados>
+<recuperados>20</recuperados>
+</totalCasoNotificadoDTO>
+<totalCasoNotificadoDTO>
+<confirmados>20</confirmados>
+<descartados>3</descartados>
+<id>8</id>
+<municipios>Iracema</municipios>
+<notificados>80</notificados>
+<recuperados>1</recuperados>
+</totalCasoNotificadoDTO>
+<totalCasoNotificadoDTO>
+<confirmados>68</confirmados>
+<descartados>14</descartados>
+<id>9</id>
+<municipios>Mucajaí</municipios>
+<notificados>335</notificados>
+<recuperados>21</recuperados>
+</totalCasoNotificadoDTO>
+<totalCasoNotificadoDTO>
+<confirmados>25</confirmados>
+<descartados>1</descartados>
+<id>10</id>
+<municipios>Normandia</municipios>
+<notificados>49</notificados>
+<recuperados>5</recuperados>
+</totalCasoNotificadoDTO>
+<totalCasoNotificadoDTO>
+<confirmados>154</confirmados>
+<descartados>27</descartados>
+<id>11</id>
+<municipios>Pacaraima</municipios>
+<notificados>783</notificados>
+<recuperados>78</recuperados>
+</totalCasoNotificadoDTO>
+<totalCasoNotificadoDTO>
+<confirmados>230</confirmados>
+<descartados>59</descartados>
+<id>12</id>
+<municipios>Rorainópolis</municipios>
+<notificados>2004</notificados>
+<recuperados>85</recuperados>
+</totalCasoNotificadoDTO>
+<totalCasoNotificadoDTO>
+<confirmados>55</confirmados>
+<descartados>8</descartados>
+<id>13</id>
+<municipios>São João da Baliza</municipios>
+<notificados>256</notificados>
+<recuperados>7</recuperados>
+</totalCasoNotificadoDTO>
+<totalCasoNotificadoDTO>
+<confirmados>53</confirmados>
+<descartados>17</descartados>
+<id>14</id>
+<municipios>São Luiz</municipios>
+<notificados>171</notificados>
+<recuperados>22</recuperados>
+</totalCasoNotificadoDTO>
+<totalCasoNotificadoDTO>
+<confirmados>24</confirmados>
+<descartados>8</descartados>
+<id>15</id>
+<municipios>Uiramutã</municipios>
+<notificados>43</notificados>
+<recuperados>20</recuperados>
+</totalCasoNotificadoDTO>
+<totalCasoNotificadoDTO>
+<confirmados>5755</confirmados>
+<descartados>877</descartados>
+<id>16</id>
+<municipios>Total</municipios>
+<notificados>27710</notificados>
+<recuperados>1754</recuperados>
+</totalCasoNotificadoDTO>
+</collection>

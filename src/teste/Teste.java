@@ -50,7 +50,7 @@ public class Teste {
      * @throws javax.xml.parsers.ParserConfigurationException
      * @throws org.xml.sax.SAXException
      */
-    public static void main(String[] args) throws BadElementException, IOException, ParserConfigurationException, SAXException {
+    public static void main(String[] args) throws BadElementException, IOException, ParserConfigurationException, SAXException, Exception {
         
          
         Document documento = new Document(PageSize.A4, 50, 50, 80, 80);
